@@ -41,3 +41,16 @@ group :development, :test do
   gem 'spring'
 end
 
+
+
+gem 'bootstrap-sass', '~> 3.3.4'
+gem 'faker'
+gem 'figaro'
+gem 'kaminari'
+gem 'simple_form'
+gem 'slim-rails'
+gem 'slim'
+gem "mongoid", "~> 4.0.0"
+gem 'devise'
+gem 'puma'
+gem 'jquery-turbolinks'
