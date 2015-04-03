@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title Today Focus On
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+  body
+  .nav.navbar-inverse role="navigation"
+    ul.nav.navbar-nav
+      li <a href="/">Home</a>
+      li <a href="/about">About</a>
+
+  / flash nottice area
+  - if flash[:notice]
+    .alert.alert-success
+      button type="button" class="close" data-dismiss="alert" &times;
+      = flash[:notice]
+  - elsif flash[:error]
+    .alert.alert-danger
+      button type="button" class="close" data-dismiss="alert" &times;
+      = flash[:error]
+  - elsif flash[:alert]
+    .alert.alert-warning
+      button type="button" class="close" data-dismiss="alert" &times;
+      = flash[:alert]
+
+  = yield
