@@ -48,6 +48,7 @@ end
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'faker'
 gem 'figaro'
+gem 'font-awesome-sass'
 gem 'kaminari'
 gem 'simple_form'
 gem 'slim-rails'
